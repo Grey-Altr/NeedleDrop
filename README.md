@@ -63,7 +63,7 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 
 ## Data Model Breakdown
 
-### User - 1:N
+### User - 1:M
 
 - [PK] userId
 - username: CharField
@@ -71,13 +71,13 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - First Name: CharField
 - Last Name: CharField
 
-### Artist - 1:N
+### Artist - 1:M
 
 - name: CharField
 - genre: CharField
 - bio: TextField (optional)
 
-### Release - 1:N
+### Release - 1:M
 
 - title: CharField
 - artist: ForeignKey -> Artist
@@ -87,7 +87,7 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - cover_image: URL or FileField
 - description: TextField (optional)
 
-### Review - 1:N
+### Review - 1:M
 
 - user: ForeignKey -> User
 - release: ForeignKey -> Release
@@ -95,7 +95,7 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - review_text: TextField (optional)
 - created_at: DateTimeField 
 
-### CollectionEntry - N:N
+### CollectionEntry - M:M
 
 - user: ForeignKey -> User
 - release: ForeignKey -> Release
@@ -104,7 +104,7 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - notes: DateField
 - is_for_sale: BooleanField
 
-### WishListItem - N:N
+### WishListItem - M:M
 
 - user: ForeignKey -> User
 - release: ForeignKey -> Release
