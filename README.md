@@ -63,6 +63,8 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 
 ## Data Model Breakdown
 
+![ERD](ERD.png)
+
 ### User - 1:M
 
 - [PK] userId
