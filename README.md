@@ -95,10 +95,10 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 #### Release - 1:M
 
 - title: CharField
-- artist: ForeignKey -> Artist
+- artist: CharField (Post-MVP: ForeignKey -> Artist)
 - release_date: DateField
 - label: CharField
-- format: ChoiceField (Vinyl, CD, Cassette, etc.)
+- media_format: ChoiceField (Vinyl, CD, Cassette, etc.)
 - cover_image: URL or FileField
 - description: TextField (optional)
 
@@ -166,9 +166,9 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [ ] Create and switch to `dev` branch
 - [x] Initialize Django project: `django-admin startproject needledrop`
 - [x] Create app: `python manage.py startapp collection`
-- [ ] Install psycopg2 and create PostgreSQL DB
-- [ ] Connect PostgreSQL in `settings.py`
-- [ ] Run `migrate` and create superuser
+- [x] Install psycopg2 and create PostgreSQL DB
+- [x] Connect PostgreSQL in `settings.py`
+- [x] Run `migrate` and create superuser
 
 #### 2. Models & Relationships
 - [ ] Define models:
