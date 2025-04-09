@@ -32,6 +32,8 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 
 ![Trello](TrelloBoard.png)
 
+[NeedleDrop Trello Board](https://trello.com/b/MBtyMu6W/needledrop)
+
 ## User Stories
 
 ### MVP
