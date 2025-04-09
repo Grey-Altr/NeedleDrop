@@ -147,28 +147,25 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 ### MVP
 
 #### 0. Web Design Planning (Figma)
-- [ ] Create a new Figma project: "NeedleDrop UI"
+- [x] Create a new Figma project: "NeedleDrop UI"
 - [ ] Define the visual theme (colors, fonts, spacing, branding)
-- [ ] Sketch a wireframe for each major page:
-  - [ ] Home / Landing page
-  - [ ] Login/Register
-  - [ ] Release List & Detail Page
-  - [ ] Collection Dashboard
-  - [ ] Wishlist Page
-  - [ ] Review Section / Form
+- [x] Sketch a wireframe for each major page:
+  - [x] Home / Landing page
+  - [x] Login/Register
+  - [x] Release List & Detail Page
 - [ ] Use Frames to define layout using Flexbox-style or grid layout
 - [ ] Label all components: buttons, navbars, cards, inputs, etc.
 - [ ] Group reusable UI elements (e.g. release cards, review blocks)
 - [ ] Define color palette and check accessibility contrast
-- [ ] Export or screenshot key screens for use in documentation
+- [x] Export or screenshot key screens for use in documentation
 - [ ] (Optional) Share Figma link in README for visual reference
 
 #### 1. Project & Git Setup
-- [ ] Create GitHub repo: `needledrop`
-- [ ] Clone locally
+- [x] Create GitHub repo: `NeedleDrop`
+- [x] Clone locally
 - [ ] Create and switch to `dev` branch
-- [ ] Initialize Django project: `django-admin startproject needledrop`
-- [ ] Create app: `python manage.py startapp collection`
+- [x] Initialize Django project: `django-admin startproject needledrop`
+- [x] Create app: `python manage.py startapp collection`
 - [ ] Install psycopg2 and create PostgreSQL DB
 - [ ] Connect PostgreSQL in `settings.py`
 - [ ] Run `migrate` and create superuser
@@ -222,6 +219,12 @@ NeedleDrop was created as a music collection manager that focuses on personal li
   - [ ] What you'd add with more time
 
 ### Post-MVP
+
+#### Design
+- [ ] Wireframe for:
+  - [ ] Collection Dashboard
+  - [ ] Wishlist Page
+  - [ ] Review Section / Form
 
 #### Models & Relationships
 - [ ] Define models:
