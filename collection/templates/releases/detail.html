@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+<!-- <Link/> stylesheet -->
+
+{% block content %}
+<section class="release-container">
+  <div class="release-img">
+    <img src="" alt="Cover art for {{ release.title }}" />
+  </div>
+  <div class="release-detail">
+    <h2>{{ release.title }}</h2>
+    <p>Artist: {{ release.title }}</p>
+    <p>Label: {{ release.label }}</p>
+    <p>Format: {{ release.media_format }}</p>
+    <p><small>{{ release.description }}</small></p>
+
+    <div class="release-actions">
+      <a href="{% url 'release-update' release.id %}" class="btn-warn">Edit</a>
+      <a href="{% url 'release-delete' release.id %}" class="btn-danger"
+        >Delete</a
+      >
+    </div>
+  </div>
+</section>
+
+{% endblock %}

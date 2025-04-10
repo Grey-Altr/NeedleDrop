@@ -183,9 +183,10 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [ ] Use `@login_required` on collection
 - [ ] Use `{% if request.user.is_authenticated %}` to control access in templates
 
-#### 4. Templates & Base Layout
+#### 4. Templates, Base Layout, CRUD Functionality
 - [x] Create `base.html` with nav links:
   - Home | My Collection | Login | Logout
+- [ ] Create CRUD for Releases
 - [ ] Use `{% block content %}` and extend `base.html` in all views
 - [ ] Create templates for release list/detail
 

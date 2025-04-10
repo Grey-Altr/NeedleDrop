@@ -5,25 +5,38 @@
 {% block content %}
 
 <section class="page-header">
-    <h1>My Collection</h1>
+  <h1>My Collection</h1>
 </section>
 
+<div class="create-card">
+  <button class="btn-submit"><a href="{% url 'release-create' %}">+</a></button>
+</div>
+
 <section class="card-container">
-    {% for release in release_list %}
-    <div class="card">
-        <div class="card-content">
-            <div class="card-image-container">
-                <img src="" alt="cover image"/>
-            </div>
-            <h2 class="card-title">{{ release.title }}</h2>
-            <p>Artist: {{ release.title }}</p>
-            <p>Label: {{ release.label }}</p>
-            <p>Release Date: (release date)</p>
-            <p>Format: {{ release.media_format }}</p>
-            <p><small>{{ release.description }}</small></p>
-        </div>
+  {% for release in release_list %}
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image-container">
+        <img src="" alt="cover image" />
+      </div>
+      <h2 class="card-title">{{ release.title }}</h2>
+      <p>
+        Artist:
+        <a href="{% url 'release-detail' release.id %}">{{ release.title }}</a>
+      </p>
+      <p>Label: {{ release.label }}</p>
+      <p>Release Date: (release date)</p>
+      <p>Format: {{ release.media_format }}</p>
+      <p><small>{{ release.description }}</small></p>
     </div>
-    {% endfor %}
+    <div class="release-actions">
+      <a href="{% url 'release-update' release.id %}" class="btn-warn">Edit</a>
+      <a href="{% url 'release-delete' release.id %}" class="btn-danger"
+        >Delete</a
+      >
+    </div>
+  </div>
+  {% endfor %}
 </section>
 
 {% endblock %}
