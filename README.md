@@ -184,7 +184,7 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [ ] Use `{% if request.user.is_authenticated %}` to control access in templates
 
 #### 4. Templates & Base Layout
-- [ ] Create `base.html` with nav links:
+- [x] Create `base.html` with nav links:
   - Home | My Collection | Login | Logout
 - [ ] Use `{% block content %}` and extend `base.html` in all views
 - [ ] Create templates for release list/detail

@@ -16,8 +16,9 @@
       <nav>
         <ul>
           {% if user.is_authenticated %}
+          <li>Welcome, {{ user.username }}!</li>
           <li><a href="">Home</a></li>
-          <li><a href="">My Collection</a></li>
+          <li><a href="/releases">My Collection</a></li>
           <li>
             <form action="{% url 'logout' %}" method="POST" id="logout-form">
               {% csrf_token %}

@@ -1,12 +1,22 @@
 from django.shortcuts import render, redirect
+from .models import Release
+from django.views.generic import ListView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+
+
 # Views
+
 
 # Home CBV
 class Home(LoginView):
     template_name = 'home.html'
+    
+# Release CBV
+class ReleaseList(ListView):
+    model = Release
+    template_name = 'releases/release_list.html'
     
 # signup function
 def signup(request):

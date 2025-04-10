@@ -8,6 +8,13 @@ urlpatterns = [
         views.Home.as_view(),
         name='home',
     ),
+    # Release Index path
+    path(
+        'releases/',
+        views.ReleaseList.as_view(),
+        name='release-index',
+    ),
+    # Auth/signup path
     path(
         'accounts/signup/',
         views.signup,

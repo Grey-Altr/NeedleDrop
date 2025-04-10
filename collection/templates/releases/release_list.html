@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+<!-- <Link/> Stylesheet -->
+
+{% block content %}
+
+<section class="page-header">
+    <h1>My Collection</h1>
+</section>
+
+<section class="card-container">
+    {% for release in release_list %}
+    <div class="card">
+        <div class="card-content">
+            <div class="card-image-container">
+                <img src="" alt="cover image"/>
+            </div>
+            <h2 class="card-title">{{ release.title }}</h2>
+            <p>Artist: {{ release.title }}</p>
+            <p>Label: {{ release.label }}</p>
+            <p>Release Date: (release date)</p>
+            <p>Format: {{ release.media_format }}</p>
+            <p><small>{{ release.description }}</small></p>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+{% endblock %}
