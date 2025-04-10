@@ -15,10 +15,19 @@
       </div>
       <nav>
         <ul>
+          {% if user.is_authenticated %}
           <li><a href="">Home</a></li>
           <li><a href="">My Collection</a></li>
-          <li><a href="">Login</a></li>
-          <li><a href="">Logout</a></li>
+          <li>
+            <form action="{% url 'logout' %}" method="POST" id="logout-form">
+              {% csrf_token %}
+              <button type="submit">Log Out</button>
+            </form>
+          </li>
+          {% else %}
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          {% endif %}
         </ul>
       </nav>
     </header>

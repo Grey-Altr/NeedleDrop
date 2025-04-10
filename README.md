@@ -178,8 +178,8 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [x] Register all models in `admin.py`
 
 #### 3. Authentication
-- [ ] Enable login, logout, and register functionality
-- [ ] Create views/templates for authentication
+- [x] Enable login, logout, and register functionality
+- [x] Create views/templates for authentication
 - [ ] Use `@login_required` on collection
 - [ ] Use `{% if request.user.is_authenticated %}` to control access in templates
 
