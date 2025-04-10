@@ -89,8 +89,9 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [PK] userId
 - username: CharField
 - password: CharField
-- First Name: CharField
-- Last Name: CharField
+- email: Charfield
+- first_name: CharField
+- last_name: CharField
 
 #### Release - 1:M
 
@@ -148,14 +149,14 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 
 #### 0. Web Design Planning (Figma)
 - [x] Create a new Figma project: "NeedleDrop UI"
-- [ ] Define the visual theme (colors, fonts, spacing, branding)
+- [x] Define the visual theme (colors, fonts, spacing, branding)
 - [x] Sketch a wireframe for each major page:
   - [x] Home / Landing page
   - [x] Login/Register
   - [x] Release List & Detail Page
-- [ ] Use Frames to define layout using Flexbox-style or grid layout
-- [ ] Label all components: buttons, navbars, cards, inputs, etc.
-- [ ] Group reusable UI elements (e.g. release cards, review blocks)
+- [x] Use Frames to define layout using Flexbox-style or grid layout
+- [x] Label all components: buttons, navbars, cards, inputs, etc.
+- [x] Group reusable UI elements (e.g. release cards, review blocks)
 - [ ] Define color palette and check accessibility contrast
 - [x] Export or screenshot key screens for use in documentation
 - [ ] (Optional) Share Figma link in README for visual reference
@@ -171,15 +172,15 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [x] Run `migrate` and create superuser
 
 #### 2. Models & Relationships
-- [ ] Define models:
-  - [ ] Release: title, FK to Artist, format, release_date, cover_image, description
-- [ ] Run `makemigrations` and `migrate`
-- [ ] Register all models in `admin.py`
+- [x] Define initial model:
+  - [x] Release: title, FK to Artist, format, release_date, cover_image, description
+- [x] Run `makemigrations` and `migrate`
+- [x] Register all models in `admin.py`
 
 #### 3. Authentication
 - [ ] Enable login, logout, and register functionality
 - [ ] Create views/templates for authentication
-- [ ] Use `@login_required` on collection, wishlist, review views
+- [ ] Use `@login_required` on collection
 - [ ] Use `{% if request.user.is_authenticated %}` to control access in templates
 
 #### 4. Templates & Base Layout

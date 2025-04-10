@@ -5,7 +5,7 @@ urlpatterns = [
     # Home path
     path(
         '',
-        views.home,
+        views.Home.as_view(),
         name='home',
     ),
 ]
