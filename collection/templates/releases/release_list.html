@@ -9,7 +9,7 @@
 </section>
 
 <div class="create-card">
-  <button class="btn-submit"><a href="{% url 'release-create' %}">+</a></button>
+  <button class="btn-link"><a href="{% url 'release-create' %}">+</a></button>
 </div>
 
 <section class="card-container">
@@ -19,10 +19,10 @@
       <div class="card-image-container">
         <img src="" alt="cover image" />
       </div>
-      <h2 class="card-title">{{ release.title }}</h2>
+      <h2 class="card-title"><a href="{% url 'release-detail' release.id %}">{{ release.title }}</a></h2>
       <p>
         Artist:
-        <a href="{% url 'release-detail' release.id %}">{{ release.title }}</a>
+        {{ release.artist }}
       </p>
       <p>Label: {{ release.label }}</p>
       <p>Release Date: (release date)</p>

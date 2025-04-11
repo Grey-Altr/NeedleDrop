@@ -97,8 +97,8 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 
 - title: CharField
 - artist: CharField (Post-MVP: ForeignKey -> Artist)
-- release_date: DateField
 - label: CharField
+- release_date: DateField
 - media_format: ChoiceField (Vinyl, CD, Cassette, etc.)
 - cover_image: URL or FileField
 - description: TextField (optional)
@@ -180,15 +180,15 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 #### 3. Authentication
 - [x] Enable login, logout, and register functionality
 - [x] Create views/templates for authentication
-- [ ] Use `@login_required` on collection
-- [ ] Use `{% if request.user.is_authenticated %}` to control access in templates
+- [x] Use `LoginRequiredMixin` on collection
+- [x] Use `{% if request.user.is_authenticated %}` to control access in templates
 
 #### 4. Templates, Base Layout, CRUD Functionality
 - [x] Create `base.html` with nav links:
   - Home | My Collection | Login | Logout
-- [ ] Create CRUD for Releases
-- [ ] Use `{% block content %}` and extend `base.html` in all views
-- [ ] Create templates for release list/detail
+- [x] Create CRUD for Releases
+- [x] Use `{% block content %}` and extend `base.html` in all views
+- [x] Create templates for release list/detail
 
 #### 5. Final Polish
 - [ ] Ensure consistent template layout across pages

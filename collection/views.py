@@ -20,7 +20,7 @@ class ReleaseList(LoginRequiredMixin, ListView):
     template_name = 'releases/release_list.html'
     
     def get_queryset(self):
-        return Release.object.filter(user=self.request.user)
+        return Release.objects.filter(user=self.request.user)
     
 # Detail CBV
 class ReleaseDetail(LoginRequiredMixin, DetailView):
