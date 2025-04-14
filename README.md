@@ -191,10 +191,10 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [x] Create templates for release list/detail
 
 #### 5. Final Polish
-- [ ] Ensure consistent template layout across pages
+- [x] Ensure consistent template layout across pages
 - [ ] Add alt text for all cover images
-- [ ] Style all buttons and forms using CSS Grid/Flexbox
-- [ ] Ensure text contrast meets accessibility standards (WCAG AA)
+- [x] Style all buttons and forms using CSS Grid/Flexbox
+- [x] Ensure text contrast meets accessibility standards (WCAG AA)
 - [ ] Remove unused or commented-out code
 
 #### 6. Deployment & Submission
