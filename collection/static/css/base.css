@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/static/fonts/InstrumentSerif-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --font-sans: 'Jost', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+
+  --color-bg: #ffffff;
+  --color-fg: #1d1d1f;
+  --color-muted: #6e6e73;
+  --color-border: #e5e5e7;
+  --color-link: #0071e3;
+  --color-focus: #ff9500;
+
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --radius: 12px;
+
+  --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-medium: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body & Typography */
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-logo-container img {
+  height: 40px;
+}
+
+/* Navigation */
+.nav-container nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.nav-container nav ul li {
+  font-size: 0.95rem;
+}
+
+.nav-container nav ul li a,
+.nav-container nav ul li button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--color-link);
+  transition: color 0.2s ease-in-out;
+}
+.nav-container nav ul li button:hover,
+.nav-container nav ul li a:hover {
+  color: #005bb5;
+}
+
+form#logout-form {
+  display: inline;
+}
+
+/* Main */
+main {
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+/* Focus Ring */
+a:focus, button:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* Responsive Nav (Optional Mobile Enhancements) */
+@media (max-width: 768px) {
+  .nav-container nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: var(--spacing-sm);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

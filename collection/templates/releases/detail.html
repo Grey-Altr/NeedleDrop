@@ -1,13 +1,14 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block head %}
 
-<!-- <Link/> stylesheet -->
+<link rel="stylesheet" href="{% static 'css/releases/release-detail.css' %}" />
 
-{% block content %}
+{% endblock %} {% block content %}
+
 <section class="release-container">
   <div class="release-img">
     <img src="" alt="Cover art for {{ release.title }}" />
   </div>
-  <div class="release-detail">
+  <div class="release-details">
     <h2>{{ release.title }}</h2>
     <p>Artist: {{ release.title }}</p>
     <p>Label: {{ release.label }}</p>
