@@ -1,5 +1,7 @@
 # NeedleDrop
 
+![NeedleDrop](NeedleDropHome.png)
+
 NeedleDrop is a Django we application inspired by [Discogs](https://discogs.com). It allows users to catalog their personal music collection - from vinyl records to CDs and digital releases - while exploring releases by artists, track their ownership details, and managing their own curated archive.
 
 ---
