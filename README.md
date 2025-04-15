@@ -198,27 +198,27 @@ NeedleDrop was created as a music collection manager that focuses on personal li
 - [ ] Remove unused or commented-out code
 
 #### 6. Deployment & Submission
-- [ ] Set up production config for Heroku
-- [ ] Configure `ALLOWED_HOSTS` and collect static files
+- [x] Set up production config for Heroku
+- [x] Configure `ALLOWED_HOSTS` and collect static files
 - [ ] Deploy app to hosting platform
 - [ ] Finalize `README.md`:
-  - [ ] Screenshot
+  - [x] Screenshot
   - [ ] Live app link
-  - [ ] User stories
-  - [ ] Technologies used
-  - [ ] Development schedule
-  - [ ] ERD diagram
+  - [x] User stories
+  - [x] Technologies used
+  - [x] Development schedule
+  - [x] ERD diagram
 - [ ] Merge `dev` branch into `main`
 - [ ] Push final code and tag submission commit
 - [ ] Submit repo and live link
 
 #### 7. Presentation Prep
-- [ ] Prepare presentation walkthrough:
-  - [ ] What the app does
-  - [ ] How it works (models, views, templates)
-  - [ ] Key features
-  - [ ] Challenges you solved
-  - [ ] What you'd add with more time
+- [x] Prepare presentation walkthrough:
+  - [x] What the app does
+  - [x] How it works (models, views, templates)
+  - [x] Key features
+  - [x] Challenges you solved
+  - [x] What you'd add with more time
 
 ### Post-MVP
 
