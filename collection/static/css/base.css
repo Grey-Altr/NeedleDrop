@@ -43,6 +43,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/static/images/ND_Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: filter 0.4s ease;
+}
+
+/* Blur on non-home pages */
+body.blur-bg .background-layer {
+  filter: blur(8px) brightness(0.9);
+}
+
 h1, h2, h3 {
   font-family: var(--font-serif);
   font-weight: 400;
@@ -65,6 +84,9 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .header-logo-container img {

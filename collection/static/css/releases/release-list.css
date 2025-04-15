@@ -5,16 +5,45 @@
   flex-wrap: wrap;
 }
 
+.btn-link {
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: steelblue;
+  color: white;
+  display: inline-block;
+  transform: back-color 0.2s ease;
+}
+
 .card {
   width: 275px;
   margin: 10px;
   border: var(--borders);
+  border-color: steelblue;
   box-shadow: var(--card-box-shadow);
 }
 
 .card-content {
   padding: 10px;
   width: 100%;
+}
+
+.card-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.release-icon {
+  display: block;
+  width: 100%;
+  max-width: 275px;
+  height: auto;
+  object-fit: contain;
+  background: pink;
 }
 
 .usr-img {

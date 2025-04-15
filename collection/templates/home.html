@@ -5,10 +5,10 @@
 {% endblock %} {% block content %}
 
 <section class="logo-container">
-  <div class="release-container">
-    <img src="" alt="ND LOGO" />
+  <div class="logo-graphic-container">
+    <img src="{% static 'images/ND_Logo_Rect.png' %}" alt="ND LOGO" style="width: 150%; height: auto;"/>
   </div>
-  <h2>NeedleDrop Tagline</h2>
+  <h2>Track What Moves You.</h2>
 </section>
 
 {% if not user.is_authenticated %}

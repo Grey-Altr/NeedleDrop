@@ -9,7 +9,18 @@
 </section>
 
 <div class="create-card">
-  <button class="btn-link"><a href="{% url 'release-create' %}">+</a></button>
+  <button class="btn-link"><a href="{% url 'release-create' %}" style="text-decoration: none;
+  font-size: 3rem;
+  padding: 12px 24px;
+  border-color: white;
+  border-radius: 8px;
+  background-color: steelblue;
+  color: white;
+  display: inline-block;
+  transform: back-color 0.2s ease;">
+  +
+</a>
+</button>
 </div>
 
 <section class="card-container">
@@ -17,7 +28,7 @@
   <div class="card">
     <div class="card-content">
       <div class="card-image-container">
-        <img src="" alt="cover image" />
+        <img class="release-icon" src="{% static 'images/ND_PCHLDR_Icon.png' %}" alt="Cover placeholder image." style="width: 100%; max-width: 275px; height: auto; border: 2px solid steelblue;" />
       </div>
       <h2 class="card-title"><a href="{% url 'release-detail' release.id %}">{{ release.title }}</a></h2>
       <p>
@@ -27,14 +38,14 @@
       <p>Label: {{ release.label }}</p>
       <p>Release Date: (release date)</p>
       <p>Format: {{ release.media_format }}</p>
-      <p><small>{{ release.description }}</small></p>
+      <p>Description:<br><small>{{ release.description }}</small></p>
     </div>
     <div class="release-actions">
-      <a href="{% url 'release-update' release.id %}" class="btn-warn">Edit</a>
-      <a href="{% url 'release-delete' release.id %}" class="btn-danger"
+      <button type="button" class="btn-warn"><a href="{% url 'release-update' release.id %}">Edit</a></button>
+      <button type="button" class="btn-danger"><a href="{% url 'release-delete' release.id %}"
         >Delete</a
-      >
-    </div>
+      ><button>
+      </div>
   </div>
   {% endfor %}
 </section>
